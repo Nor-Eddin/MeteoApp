@@ -8,4 +8,15 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="icon.ico" />
+    <None Remove="iconBug.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="iconBug.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
 </Project>
