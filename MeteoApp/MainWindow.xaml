@@ -6,17 +6,27 @@
         xmlns:local="clr-namespace:MeteoApp"
         mc:Ignorable="d"
         Title="Weather" Height="450" Width="800" WindowStyle="ToolWindow" Icon="/iconBug.png" ResizeMode="NoResize" ShowInTaskbar="False">
-    
+
     <DockPanel LastChildFill="False">
         <StackPanel DockPanel.Dock="Left" Width="180" >
             <StackPanel.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="#FF264D8C" Offset="0"/>
-                    <GradientStop Color="#FF0B3377" Offset="1"/>
+                    <GradientStop Color="#FF81A7E4" Offset="1"/>
+                    <GradientStop Color="#FF081F48" Offset="0"/>
+                    <GradientStop Color="#FF1B4385" Offset="1"/>
+                    <GradientStop Color="#FF0F3473" Offset="1"/>
+                    <GradientStop Color="#FF6A9AEA" Offset="1"/>
                 </LinearGradientBrush>
             </StackPanel.Background>
-
+            <StackPanel Orientation="Horizontal" Margin="0,3,0,0">
+                <Image Source="/iconBug.png" Width="45" Margin="5,0,0,0" />
+                <Label Foreground="#FF0C7488" Content="Weather" VerticalAlignment="Center" FontWeight="Bold" FontSize="24" Margin="5,0,0,0"/>
+            </StackPanel>
+            <Label Foreground="#FF0C7488" Content="Enter a city" VerticalAlignment="Center" FontSize="16" Margin="0,3,0,0" HorizontalAlignment="Center"/>
+            <TextBox Margin="5" Height="25" Name="citytxt"/>
+            <Button Name="btnsearch" Click="btnsearch_Click"  Margin="5" Height="20" Foreground="#FF0C7488" BorderThickness="0,0,0,0" SnapsToDevicePixels="True" ClipToBounds="True">Search</Button>
         </StackPanel>
+        
     </DockPanel>
 
 

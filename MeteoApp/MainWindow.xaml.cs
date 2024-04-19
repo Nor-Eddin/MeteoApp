@@ -20,5 +20,9 @@ namespace MeteoApp
         {
             InitializeComponent();
         }
+
+        private void btnsearch_Click(object sender, RoutedEventArgs e)
+        {
+        }
     }
 }
