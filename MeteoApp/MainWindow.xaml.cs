@@ -19,10 +19,17 @@ namespace MeteoApp
         public MainWindow()
         {
             InitializeComponent();
+            //Modifi l'image de fond
+            headerImg.Source = new BitmapImage(new Uri(@"/orageux.jpg",UriKind.Relative));
         }
 
         private void btnsearch_Click(object sender, RoutedEventArgs e)
         {
+        }
+
+        private void btninfo_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

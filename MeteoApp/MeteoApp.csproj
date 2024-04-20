@@ -9,12 +9,24 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="coucherDeSoleil.jpg" />
     <None Remove="icon.ico" />
     <None Remove="iconBug.png" />
+    <None Remove="orageux.jpg" />
+    <None Remove="orageuxPluvieux.jpg" />
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="coucherDeSoleil.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="iconBug.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="orageux.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="orageuxPluvieux.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>
