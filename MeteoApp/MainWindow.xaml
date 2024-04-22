@@ -22,7 +22,37 @@
         </StackPanel>
 
         <Canvas>
-            <Image Name="headerImg" Height="250" Width="620" VerticalAlignment="Top"  Stretch="Fill"/>
+            <Image Name="headerImg" Height="250" Width="620" VerticalAlignment="Top" Source="/orageux.jpg" Stretch="Fill"/>
+            <!--Nom de la ville-->
+            <Label Content="Paris" Foreground="White" FontSize="35" FontWeight="Bold" Width="260" Canvas.Left="330" HorizontalContentAlignment="Right" HorizontalAlignment="Left" VerticalAlignment="Center">
+                <Label.Effect>
+                    <DropShadowEffect BlurRadius="10" Color="#FF545050" />
+                </Label.Effect>
+            </Label>
+            <!--Température-->
+            <Label Content="+36°c" Foreground="White" FontSize="65" FontWeight="Bold" Width="200" HorizontalContentAlignment="Left">
+                <Label.Effect>
+                    <DropShadowEffect BlurRadius="10" Color="#FF545050" />
+                </Label.Effect>
+            </Label>
+            <!--Date-->
+            <Label Content="Lundi 16 Avril 2024" Foreground="White" FontSize="25" FontWeight="Bold" Width="260" HorizontalContentAlignment="Right" Canvas.Left="330" Canvas.Top="207" HorizontalAlignment="Left" VerticalAlignment="Center">
+                <Label.Effect>
+                    <DropShadowEffect BlurRadius="10" Color="#FF545050" />
+                </Label.Effect>
+            </Label>
+            <!--Description-->
+            <Label Content="Orageux" Foreground="White" FontSize="20" FontWeight="Bold" Width="93" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Canvas.Top="57" VerticalAlignment="Center" Canvas.Left="497">
+                <Label.Effect>
+                    <DropShadowEffect BlurRadius="10" Color="#FF545050" />
+                </Label.Effect>
+            </Label>
+            <!--Vent-->
+            <Label Content="25 km/h" Foreground="White" FontSize="35" FontWeight="Bold" Width="160" HorizontalContentAlignment="Right" Canvas.Left="10" Canvas.Top="101" HorizontalAlignment="Center" VerticalAlignment="Top">
+                <Label.Effect>
+                    <DropShadowEffect BlurRadius="10" Color="#FF545050" />
+                </Label.Effect>
+            </Label>
         </Canvas>
     </DockPanel>
 
