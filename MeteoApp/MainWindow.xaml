@@ -22,7 +22,7 @@
         </StackPanel>
 
         <Canvas>
-            <Image Name="headerImg" Height="250" Width="620" VerticalAlignment="Top" Source="/orageux.jpg" Stretch="Fill"/>
+            <Image Name="headerImg" Height="264" Width="620" VerticalAlignment="Top" Source="/orageux.jpg" Stretch="Fill"/>
             <!--Nom de la ville-->
             <Label Content="Paris" Foreground="White" FontSize="35" FontWeight="Bold" Width="260" Canvas.Left="330" HorizontalContentAlignment="Right" HorizontalAlignment="Left" VerticalAlignment="Center">
                 <Label.Effect>
@@ -54,6 +54,36 @@
                 </Label.Effect>
             </Label>
         </Canvas>
+        <DockPanel DockPanel.Dock="Bottom" Height="160" >
+            <ScrollViewer VerticalScrollBarVisibility="Hidden" UseLayoutRounding="True">
+            <StackPanel Width="215" Margin="0,5,0,0"  >
+                <Label Content="News" HorizontalAlignment="Center" FontWeight="Bold"/>
+                <Label Content="exemple d'actu 1"/>
+                <Label Content="exemple d'actu 2"/>
+                <Label Content="exemple d'actu 3"/>
+                <Label Content="exemple d'actu 4"/>
+                <Label Content="exemple d'actu 5"/>
+                <Label Content="exemple d'actu 6"/>
+                <Label Content="exemple d'actu 7"/>
+                <Label Content="exemple d'actu 8"/>
+            </StackPanel>
+            </ScrollViewer>
+            <StackPanel Width="133" Margin="0,5,0,0" VerticalAlignment="Center">
+                <Label Content="Mon" HorizontalAlignment="Center" FontSize="20" FontWeight="Bold"/>
+                <Image Name="imgMon" Height="60" Width="60" Source="/ensoleiller.png" Stretch="Fill"/>
+                <Label Content="+24°c" HorizontalAlignment="Center" FontSize="20"/>
+            </StackPanel>
+            <StackPanel Width="133" Margin="0,5,0,0" VerticalAlignment="Center">
+                <Label Content="TUS" HorizontalAlignment="Center" FontSize="20" FontWeight="Bold"/>
+                <Image Name="imgTus" Height="60" Width="60" Source="/mitiger.png" Stretch="Fill"/>
+                <Label Content="+12°c" HorizontalAlignment="Center" FontSize="20"/>
+            </StackPanel>
+            <StackPanel Width="133" Margin="0,5,0,0" VerticalAlignment="Center">
+                <Label Content="WEN" HorizontalAlignment="Center" FontSize="20" FontWeight="Bold"/>
+                <Image Name="imgWen" Height="60" Width="60" Source="/pluvieux.png" Stretch="Fill"/>
+                <Label Content="+8°c" HorizontalAlignment="Center" FontSize="20"/>
+            </StackPanel>
+        </DockPanel>
     </DockPanel>
 
 

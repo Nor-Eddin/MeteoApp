@@ -9,26 +9,40 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="coucherDeSoleil.jpg" />
+    <None Remove="ensoleiller.png" />
     <None Remove="icon.ico" />
-    <None Remove="iconBug.png" />
-    <None Remove="orageux.jpg" />
-    <None Remove="orageuxPluvieux.jpg" />
+    <None Remove="mitiger.png" />
+    <None Remove="pluvieux.png" />
   </ItemGroup>
 
   <ItemGroup>
     <Resource Include="coucherDeSoleil.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="ensoleiller.png" />
     <Resource Include="iconBug.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="mitiger.png" />
     <Resource Include="orageux.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="orageuxPluvieux.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="pluvieux.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="icon\ensoleiller.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="icon\mitiger.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="icon\pluvieux.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>
