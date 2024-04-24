@@ -36,7 +36,7 @@
                 </Label.Effect>
             </Label>
             <!--Date-->
-            <Label Content="Lundi 16 Avril 2024" Foreground="White" FontSize="25" FontWeight="Bold" Width="260" HorizontalContentAlignment="Right" Canvas.Left="330" Canvas.Top="207" HorizontalAlignment="Left" VerticalAlignment="Center">
+            <Label Name="dateTxt" Content="Lundi 16 Avril 2024" Foreground="White" FontSize="20" FontWeight="Bold" Width="260" HorizontalContentAlignment="Right" Canvas.Left="330" Canvas.Top="207" HorizontalAlignment="Left" VerticalAlignment="Center">
                 <Label.Effect>
                     <DropShadowEffect BlurRadius="10" Color="#FF545050" />
                 </Label.Effect>
@@ -69,17 +69,17 @@
             </StackPanel>
             </ScrollViewer>
             <StackPanel Width="133" Margin="0,5,0,0" VerticalAlignment="Center">
-                <Label Content="Mon" HorizontalAlignment="Center" FontSize="20" FontWeight="Bold"/>
+                <Label Name="day1" Content="Mon" HorizontalAlignment="Center" FontSize="20" FontWeight="Bold"/>
                 <Image Name="imgMon" Height="60" Width="60" Source="/ensoleiller.png" Stretch="Fill"/>
                 <Label Content="+24°c" HorizontalAlignment="Center" FontSize="20"/>
             </StackPanel>
             <StackPanel Width="133" Margin="0,5,0,0" VerticalAlignment="Center">
-                <Label Content="TUS" HorizontalAlignment="Center" FontSize="20" FontWeight="Bold"/>
+                <Label Name="day2" Content="TUS" HorizontalAlignment="Center" FontSize="20" FontWeight="Bold"/>
                 <Image Name="imgTus" Height="60" Width="60" Source="/mitiger.png" Stretch="Fill"/>
                 <Label Content="+12°c" HorizontalAlignment="Center" FontSize="20"/>
             </StackPanel>
             <StackPanel Width="133" Margin="0,5,0,0" VerticalAlignment="Center">
-                <Label Content="WEN" HorizontalAlignment="Center" FontSize="20" FontWeight="Bold"/>
+                <Label Name="day3" Content="WEN" HorizontalAlignment="Center" FontSize="20" FontWeight="Bold"/>
                 <Image Name="imgWen" Height="60" Width="60" Source="/pluvieux.png" Stretch="Fill"/>
                 <Label Content="+8°c" HorizontalAlignment="Center" FontSize="20"/>
             </StackPanel>
