@@ -14,7 +14,7 @@
                 <Label Foreground="#FF0C7488" Content="Weather" VerticalAlignment="Center" FontWeight="Bold" FontSize="24" Margin="5,0,0,0"/>
             </StackPanel>
             <Label Foreground="#FF0C7488" Content="Enter a city" VerticalAlignment="Center" FontSize="16" Margin="0,3,0,0" HorizontalAlignment="Center"/>
-            <TextBox Margin="5" Height="25" Name="citytxt"/>
+            <TextBox Margin="5" Height="25" Name="cityTxt"/>
             <Button Name="btnsearch" Click="btnsearch_Click"  Margin="5" Height="20" Foreground="#FF0C7488" BorderThickness="0,0,0,0" SnapsToDevicePixels="True" ClipToBounds="True">Search</Button>
             <Separator Height="20" />
             <Button Name="btninfo" Click="btninfo_Click"  Margin="5" Height="20" Foreground="#FF0C7488" BorderThickness="0,0,0,0" SnapsToDevicePixels="True" ClipToBounds="True">INFOS</Button>
@@ -24,7 +24,7 @@
         <Canvas>
             <Image Name="headerImg" Height="264" Width="620" VerticalAlignment="Top" Source="/orageux.jpg" Stretch="Fill"/>
             <!--Nom de la ville-->
-            <Label Content="Paris" Foreground="White" FontSize="35" FontWeight="Bold" Width="260" Canvas.Left="330" HorizontalContentAlignment="Right" HorizontalAlignment="Left" VerticalAlignment="Center">
+            <Label Name="cityTitle" Content="Undefine" Foreground="White" FontSize="35" FontWeight="Bold" Width="260" Canvas.Left="330" HorizontalContentAlignment="Right" HorizontalAlignment="Left" VerticalAlignment="Center">
                 <Label.Effect>
                     <DropShadowEffect BlurRadius="10" Color="#FF545050" />
                 </Label.Effect>

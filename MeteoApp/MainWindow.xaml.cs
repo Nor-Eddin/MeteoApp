@@ -16,6 +16,10 @@ namespace MeteoApp
     /// </summary>
     public partial class MainWindow : Window
     {
+        #region les variables
+        public string city = "";
+
+        #endregion
         #region methode main
         public MainWindow()
         {
@@ -68,11 +72,14 @@ namespace MeteoApp
         #region gestion des events
         private void btnsearch_Click(object sender, RoutedEventArgs e)
         {
+            city = cityTxt.Text;
+            cityTitle.Content = city;
+       
         }
 
         private void btninfo_Click(object sender, RoutedEventArgs e)
         {
-
+            MessageBox.Show(" Nor-Eddin LAMRABET", "Développé par ", MessageBoxButton.OK,MessageBoxImage.Information);
         }
 
         private void StackPanel_Scroll(object sender, System.Windows.Controls.Primitives.ScrollEventArgs e)
